@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #131313;
+    --surface-elevated: #1c1b1b;
+    --surface-card: #201f1f;
+    --surface-highlight: #2a2a2a;
+    --border-subtle: #262626;
+    --border-structural: #353534;
+    --gold-primary: #e9c176;
+    --gold-antique: #c5a059;
+    --text-primary: #e5e2e1;
+    --text-muted: #8e8d8a;
+    --text-variant: #d1c5b4;
+  }
+
+  body {
+    background-color: #131313;
+    color: #e5e2e1;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: 0.01em;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom fine-line borders and gallery matte */
+.gallery-card {
+  background-color: #161616;
+  border: 1px solid #262626;
+  transition: border-color 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s ease;
+}
+
+.gallery-card:hover {
+  border-color: #c5a059;
+}
+
+.label-caps {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.label-meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+
+/* Smooth custom scrollbar for dark gallery aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}

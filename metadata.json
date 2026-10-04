@@ -1,0 +1,6 @@
+{
+  "name": "vivekk.captures — Field Works & Living Heritage",
+  "description": "An authentic visual journal spanning botanical studies after rainfall, moody monsoon twilight streets, timeless banyan groves, and sacred Dravidian temple architecture by Vivek.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
